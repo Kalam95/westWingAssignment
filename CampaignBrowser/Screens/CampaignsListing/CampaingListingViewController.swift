@@ -40,4 +40,13 @@ class CampaignListingViewController: UIViewController {
             })
             .disposed(by: disposeBag)
     }
+
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        coordinator.animate(alongsideTransition: { context in
+            self.typedView.collectionViewLayout.invalidateLayout()
+        }, completion: nil)
+    }
+
+    
 }

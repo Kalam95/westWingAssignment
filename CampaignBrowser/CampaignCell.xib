@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CampaignCell" id="AsK-yT-G1n" customClass="CampaignCell" customModule="CampaignBrowser" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="364"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="364"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qcK-70-jML">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="289"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="289" id="6m7-Ki-cff"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="justified" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Cd-Wu-byz" customClass="LabelWithPadding" customModule="CampaignBrowser" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="333.5" width="375" height="30.5"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <edgeInsets key="layoutMargins" top="8" left="20" bottom="8" right="8"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mX-BP-SVm" customClass="LabelWithPadding" customModule="CampaignBrowser" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="289" width="375" height="36.5"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="qcK-70-jML" firstAttribute="top" secondItem="AsK-yT-G1n" secondAttribute="top" id="9d3-qx-hsn"/>
+                <constraint firstItem="8mX-BP-SVm" firstAttribute="top" secondItem="qcK-70-jML" secondAttribute="bottom" id="ABI-ch-vjl"/>
+                <constraint firstItem="qcK-70-jML" firstAttribute="leading" secondItem="AsK-yT-G1n" secondAttribute="leading" id="Aad-P9-JKu"/>
+                <constraint firstItem="8mX-BP-SVm" firstAttribute="leading" secondItem="AsK-yT-G1n" secondAttribute="leading" id="G1Z-Vd-6uC"/>
+                <constraint firstAttribute="trailing" secondItem="qcK-70-jML" secondAttribute="trailing" id="HCH-5c-ugd"/>
+                <constraint firstAttribute="trailing" secondItem="8mX-BP-SVm" secondAttribute="trailing" id="HNq-Nv-Vem"/>
+                <constraint firstItem="8Cd-Wu-byz" firstAttribute="top" secondItem="8mX-BP-SVm" secondAttribute="bottom" constant="8" id="VKd-Af-Lf7"/>
+                <constraint firstItem="8Cd-Wu-byz" firstAttribute="leading" secondItem="AsK-yT-G1n" secondAttribute="leading" id="cs9-QS-Vmr"/>
+                <constraint firstAttribute="bottom" secondItem="8Cd-Wu-byz" secondAttribute="bottom" id="fva-O6-vh4"/>
+                <constraint firstItem="qcK-70-jML" firstAttribute="width" secondItem="AsK-yT-G1n" secondAttribute="width" id="ob1-nq-3qg"/>
+                <constraint firstAttribute="trailing" secondItem="8Cd-Wu-byz" secondAttribute="trailing" id="p5H-AU-zga"/>
+            </constraints>
+            <size key="customSize" width="375" height="364"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="8Cd-Wu-byz" id="Ofb-4P-AaF"/>
+                <outlet property="imageView" destination="qcK-70-jML" id="q2T-Cj-luC"/>
+                <outlet property="imageViewHeight" destination="6m7-Ki-cff" id="8Np-0k-VyG"/>
+                <outlet property="nameLabel" destination="8mX-BP-SVm" id="gYn-1e-pwV"/>
+            </connections>
+            <point key="canvasLocation" x="-20" y="143"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="8Cd-Wu-byz">
+            <size key="intrinsicContentSize" width="47" height="30.5"/>
+        </designable>
+        <designable name="8mX-BP-SVm">
+            <size key="intrinsicContentSize" width="60.5" height="36.5"/>
+        </designable>
+    </designables>
+</document>
