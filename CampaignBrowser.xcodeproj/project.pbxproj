@@ -20,6 +20,8 @@
 		23F7B5DC1F59A70E00154DD9 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7B5D91F59A70E00154DD9 /* ServiceLocator.swift */; };
 		23F7B5DE1F59A71B00154DD9 /* CampaignData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7B5DD1F59A71B00154DD9 /* CampaignData.swift */; };
 		23F7B5E01F59A73000154DD9 /* CampaignListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7B5DF1F59A73000154DD9 /* CampaignListingView.swift */; };
+		97C75E2C26D5657A00594E8F /* CollectionViewDynamicLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C75E2B26D5657A00594E8F /* CollectionViewDynamicLayout.swift */; };
+		97C75E2F26D566FE00594E8F /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C75E2E26D566FE00594E8F /* UIFont+Extensions.swift */; };
 		B8B5F1F166845F0ECFBB5E7F /* Pods_CampaignBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE6F773D7D1702E9482B13D /* Pods_CampaignBrowser.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +56,8 @@
 		23F7B5E11F59A76A00154DD9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		47520166195A4003183C8D8A /* Pods-CampaignBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampaignBrowser.release.xcconfig"; path = "Pods/Target Support Files/Pods-CampaignBrowser/Pods-CampaignBrowser.release.xcconfig"; sourceTree = "<group>"; };
 		6EE6F773D7D1702E9482B13D /* Pods_CampaignBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CampaignBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97C75E2B26D5657A00594E8F /* CollectionViewDynamicLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDynamicLayout.swift; sourceTree = "<group>"; };
+		97C75E2E26D566FE00594E8F /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
 		EFF862F2521D154547AA0BBB /* Pods-CampaignBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampaignBrowser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CampaignBrowser/Pods-CampaignBrowser.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				23F7B5E11F59A76A00154DD9 /* README.md */,
+				97C75E2D26D566C300594E8F /* Extensions */,
 				23F7B5981F5958F300154DD9 /* CampaignBrowser */,
 				23F7B5AD1F5958F400154DD9 /* CampaignBrowserUITests */,
 				23F7B5971F5958F300154DD9 /* Products */,
@@ -170,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				23F7B5D51F59985300154DD9 /* LabelWithPadding.swift */,
+				97C75E2B26D5657A00594E8F /* CollectionViewDynamicLayout.swift */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -189,6 +195,14 @@
 				47520166195A4003183C8D8A /* Pods-CampaignBrowser.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		97C75E2D26D566C300594E8F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				97C75E2E26D566FE00594E8F /* UIFont+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,7 +360,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				23F7B5DC1F59A70E00154DD9 /* ServiceLocator.swift in Sources */,
+				97C75E2F26D566FE00594E8F /* UIFont+Extensions.swift in Sources */,
 				23F7B59A1F5958F300154DD9 /* AppDelegate.swift in Sources */,
+				97C75E2C26D5657A00594E8F /* CollectionViewDynamicLayout.swift in Sources */,
 				23F7B5DB1F59A70E00154DD9 /* NetworkingService.swift in Sources */,
 				23F7B5C61F596F7F00154DD9 /* CampaignCell.swift in Sources */,
 				23F7B5BC1F595A1800154DD9 /* CampaingListingViewController.swift in Sources */,
