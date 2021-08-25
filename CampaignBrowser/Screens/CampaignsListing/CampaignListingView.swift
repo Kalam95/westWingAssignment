@@ -19,6 +19,11 @@ class CampaignListingView: UICollectionView {
         let campaignDataSource = ListingDataSource(campaigns: campaigns)
         dataSource = campaignDataSource
         delegate = campaignDataSource
+        let layout = UICollectionViewFlowLayout()
+        layout.minimumInteritemSpacing = 0
+        layout.minimumLineSpacing = 0
+        layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
+        collectionViewLayout = layout
         strongDataSource = campaignDataSource
         reloadData()
     }
@@ -46,7 +51,7 @@ class CampaignListingView: UICollectionView {
 /**
  The data source for the `CampaignsListingView` which is used to display the list of campaigns.
  */
-class ListingDataSource: NSObject, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class ListingDataSource: NSObject, UICollectionViewDataSource, UICollectionViewDelegate {
 
     /** The campaigns that need to be displayed. */
     let campaigns: [CampaignListingView.Campaign]
@@ -78,12 +83,6 @@ class ListingDataSource: NSObject, UICollectionViewDataSource, UICollectionViewD
         }
         return cell
     }
-
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
-                        sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.size.width, height: 450)
-    }
-
 }
 
 
