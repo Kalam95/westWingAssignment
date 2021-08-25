@@ -22,8 +22,8 @@
                             <constraint firstAttribute="height" constant="289" id="6m7-Ki-cff"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="justified" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Cd-Wu-byz" customClass="LabelWithPadding" customModule="CampaignBrowser" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="333.5" width="375" height="30.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="justified" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Cd-Wu-byz" customClass="LabelWithPadding" customModule="CampaignBrowser" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="325.5" width="375" height="38.5"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <edgeInsets key="layoutMargins" top="8" left="20" bottom="8" right="8"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -44,7 +44,7 @@
                 <constraint firstItem="8mX-BP-SVm" firstAttribute="leading" secondItem="AsK-yT-G1n" secondAttribute="leading" id="G1Z-Vd-6uC"/>
                 <constraint firstAttribute="trailing" secondItem="qcK-70-jML" secondAttribute="trailing" id="HCH-5c-ugd"/>
                 <constraint firstAttribute="trailing" secondItem="8mX-BP-SVm" secondAttribute="trailing" id="HNq-Nv-Vem"/>
-                <constraint firstItem="8Cd-Wu-byz" firstAttribute="top" secondItem="8mX-BP-SVm" secondAttribute="bottom" constant="8" id="VKd-Af-Lf7"/>
+                <constraint firstItem="8Cd-Wu-byz" firstAttribute="top" secondItem="8mX-BP-SVm" secondAttribute="bottom" id="VKd-Af-Lf7"/>
                 <constraint firstItem="8Cd-Wu-byz" firstAttribute="leading" secondItem="AsK-yT-G1n" secondAttribute="leading" id="cs9-QS-Vmr"/>
                 <constraint firstAttribute="bottom" secondItem="8Cd-Wu-byz" secondAttribute="bottom" id="fva-O6-vh4"/>
                 <constraint firstItem="qcK-70-jML" firstAttribute="width" secondItem="AsK-yT-G1n" secondAttribute="width" id="ob1-nq-3qg"/>
